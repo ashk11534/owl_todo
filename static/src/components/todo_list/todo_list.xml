@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="owl_todo.TodoList" owl="1">
+        <link rel="stylesheet" href="/owl_todo/static/src/components/todo_list/todo_list.css"/>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="my-todo mt-3">
+                <h2 class="text-center">OWL todo list</h2>
+                <div class="counter-card d-flex justify-content-center align-items-center">
+                    <h3 class="text-white" t-esc="state.value"/>
+                </div>
+                <div class="action-buttons mt-2 d-flex gap-5 justify-content-center align-items-center">
+                    <button class="increment-btn" t-on-click="counterIncrement">Increment</button>
+                    <button class="decrement-btn" t-on-click="counterDecrement">Decrement</button>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
